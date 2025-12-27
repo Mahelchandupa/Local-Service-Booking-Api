@@ -1,0 +1,16 @@
+---
+alwaysApply: true
+---
+
+PROJECT RULE – API DOCUMENTATION
+
+1. Swagger documentation must be written in src/docs/
+2. Every API endpoint MUST have a corresponding Swagger definition file
+3. Routes must NOT contain Swagger annotations
+4. Swagger files must:
+   - Match route paths exactly
+   - Include request & response schemas
+   - Include security (JWT Bearer) when required
+5. An endpoint is considered incomplete if Swagger is missing
+
+Routes and docs must be updated together.
