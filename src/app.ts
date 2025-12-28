@@ -60,11 +60,13 @@ import authRoutes from './routes/authRoutes';
 import serviceRequestRoutes from './routes/serviceRequestRoutes';
 import paymentRoutes from './routes/paymentRoutes';
 import ratingRoutes from './routes/ratingRoutes';
+import notificationRoutes from './routes/notificationRoutes';
 
 app.use('/api/auth', authRoutes);
 app.use('/api/service-requests', serviceRequestRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api/ratings', ratingRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 // 404 handler (must be after all routes)
 app.use(notFoundHandler);
