@@ -57,7 +57,10 @@ app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
 
 // API routes
 import authRoutes from './routes/authRoutes';
+import serviceRequestRoutes from './routes/serviceRequestRoutes';
+
 app.use('/api/auth', authRoutes);
+app.use('/api/service-requests', serviceRequestRoutes);
 
 // 404 handler (must be after all routes)
 app.use(notFoundHandler);
