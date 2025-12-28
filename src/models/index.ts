@@ -10,7 +10,7 @@ export { ServiceRequest } from './ServiceRequest';
 export { Payment } from './Payment';
 export { Rating } from './Rating';
 export { Notification } from './Notification';
-export { Chat } from './Chat';
+export { Conversation } from './Conversation';
 
 export { baseSchemaOptions, IBaseModel } from './BaseModel';
 

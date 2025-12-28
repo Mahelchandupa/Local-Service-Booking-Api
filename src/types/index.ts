@@ -153,6 +153,7 @@ export interface INotification extends Document {
 
 // ==================== Message ====================
 export interface IMessage {
+  _id?: Types.ObjectId;
   senderId: Types.ObjectId;
   senderRole: 'customer' | 'service_provider';
   message: string;
@@ -161,12 +162,13 @@ export interface IMessage {
 }
 
 // ==================== Chat ====================
-export interface IChat extends Document {
+export interface IConversation extends Document {
   _id: Types.ObjectId;
   serviceRequestId: Types.ObjectId;
   customerId: Types.ObjectId;
   serviceProviderId: Types.ObjectId;
   messages: IMessage[];
+  lastMessageAt: Date;
   createdAt: Date;
   updatedAt: Date;
 }
